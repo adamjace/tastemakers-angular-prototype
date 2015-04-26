@@ -1,0 +1,17 @@
+﻿<div ng-controller="mediaItemCtrl">
+
+    <h1>{{item.author}}</h1>
+    <p>{{item.description}}</p>
+
+    <div class="image">
+  
+        <img src="{{item.src}}" />         
+        <like item="{{item}}" data-load="load(id, page)" data-post="post(mediaId, likeCount, isLiked)" />
+       
+    </div>
+   
+    <div ng-controller="commentsCtrl">
+        <comments itemid="34535" data-load="load(id, page)" data-post="post(itemId, author, text)" comments-list="{{commentsList}}" />
+    </div>
+
+</div>

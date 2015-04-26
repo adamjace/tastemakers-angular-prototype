@@ -1,0 +1,17 @@
+﻿<div ng-controller="homeCtrl">
+
+    <h1>{{text.heading}}</h1>
+    <p>{{text.para}}</p>
+
+    <div class="images" ng-repeat="image in images">
+       <a href="#mediaItem" class="img">
+           <img src="{{image.src}}" />
+       </a>
+    </div>
+
+    <div ng-controller="commentsCtrl">
+        <comments itemid="999" data-load="load(id, page)" data-post="post(itemId, author, text)" comments-list="{{commentsList}}" />
+    </div>
+     <p>{{text.bottomPanel}}</p>
+
+</div>

@@ -1,0 +1,19 @@
+﻿<div class="comments">
+    <div ng-repeat="comment in commentsList | reverse">
+        <img src="http://placehold.it/30x30" /> <span class="author">{{comment.author}}</span>
+        <div class="text">{{comment.commentText}}</div>
+    </div>
+</div>
+
+<div class="new-comment">
+    <h3>Write a comment</h3>
+    <form ng-submit="post()">
+        <textarea ng-model="commentText"></textarea>
+        <button>Post</button>
+    </form>
+         
+</div>
+
+<div>
+    <button ng-click="load()">load</button>
+</div>
