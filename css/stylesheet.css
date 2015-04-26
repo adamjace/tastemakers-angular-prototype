@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.img {
+    float:left;
+}
+
+p {
+    clear:left;
+}
+
+.inactive {
+    opacity:0.3;
+}
